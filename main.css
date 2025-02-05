@@ -1,0 +1,19 @@
+/* font-family: "mudstone-sans", sans-serif;
+font-weight: 900;
+font-style: normal; */
+
+/* font-family: "chorine-large", sans-serif;
+font-weight: 500;
+font-style: normal; */
+
+h1 {
+  font-family: "mudstone-sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "chorine-large", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
