@@ -16,12 +16,13 @@ h1 {
   font-size: 5rem;
   font-style: normal;
   text-align: center;
-  color: #F9F4EA;
+  color: #f9f4ea;
 }
 
 #header-img {
-  width: 100%;
-  
+  width: 96%;
+  padding-left: 2%;
+  padding-top: 2%;
 }
 ul {
   font-family: "mudstone-sans", sans-serif;
@@ -35,7 +36,7 @@ ul {
 }
 
 .navlink {
-  color: #F9F4EA;
+  color: #f9f4ea;
   text-decoration: none;
 }
 
@@ -48,12 +49,12 @@ p {
 body {
   display: grid;
   grid-template-areas:
-    "header body body"
+    "header main main"
     "header footer footer";
 }
 
 body {
-  grid-area: body;
+  grid-area: main;
   margin: 0%;
 }
 
@@ -66,10 +67,7 @@ header {
   width: 250px;
   margin-left: 0%;
   margin-right: 0%;
-
 }
-
-
 
 footer {
   grid-area: footer;
