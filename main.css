@@ -16,13 +16,27 @@ h1 {
   font-size: 5rem;
   font-style: normal;
   text-align: center;
+  color: #F9F4EA;
 }
 
-h2 {
-  font-family: "chorine-large", sans-serif;
-  font-weight: 500;
-  font-size: 5rem;
+#header-img {
+  width: 100%;
+  
+}
+ul {
+  font-family: "mudstone-sans", sans-serif;
+  font-weight: 900;
   font-style: normal;
+  font-size: 4 rem;
+  display: flexbox;
+  list-style: none;
+  text-align: center;
+  padding-left: 0%;
+}
+
+.navlink {
+  color: #F9F4EA;
+  text-decoration: none;
 }
 
 p {
@@ -40,19 +54,26 @@ body {
 
 body {
   grid-area: body;
+  margin: 0%;
 }
 
 header {
   grid-area: header;
-  background-color: lightskyblue;
+  background-color: #546745;
   height: 100vh;
   position: sticky;
   top: 0;
   width: 250px;
+  margin-left: 0%;
+  margin-right: 0%;
+
 }
+
+
 
 footer {
   grid-area: footer;
   background-color: bisque;
   padding-bottom: 100px;
+  padding-left: 0%;
 }
