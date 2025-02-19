@@ -9,8 +9,11 @@ font-style: normal; */
 /* font-family: "barlow-condensed", sans-serif;
 font-weight: 400;
 font-style: normal; */
+a {
+  text-decoration: none;
+}
 
-h1 {
+#logo {
   font-family: "mudstone-sans", sans-serif;
   font-weight: 900;
   font-size: 5rem;
@@ -20,10 +23,30 @@ h1 {
 }
 
 #header-img {
-  width: 96%;
-  padding-left: 2%;
-  padding-top: 2%;
+  width: 98%;
+  height: 30%;
+  padding: 1%;
 }
+
+.home-category {
+  display: block;
+  font-family: "mudstone-sans", sans-serif;
+  font-size: 3svw;
+  text-decoration: none;
+  color: black;
+  padding-left: 1rem;
+  margin: 0%;
+  padding-top: 1rem;
+}
+
+.home-item {
+  display: inline-block;
+  width: 20%;
+  text-decoration: none;
+  color: white;
+  padding-left: 1%;
+}
+
 ul {
   font-family: "mudstone-sans", sans-serif;
   font-weight: 900;
@@ -49,13 +72,13 @@ p {
 body {
   display: grid;
   grid-template-areas:
-    "header main main"
-    "header footer footer";
+    "header main"
+    "header footer";
+  margin: 0%;
 }
 
-body {
+main {
   grid-area: main;
-  margin: 0%;
 }
 
 header {
