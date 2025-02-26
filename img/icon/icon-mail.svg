@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lager_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 221.01 146.82">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f7f6e3;
+        stroke-miterlimit: 10;
+        stroke-width: 15px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="7.5" y="7.5" width="206.01" height="131.82" rx="17.43" ry="17.43"/>
+  <polyline class="cls-1" points="12.43 14.46 110.51 91.86 208.58 14.46"/>
+  <line class="cls-1" x1="12.43" y1="132.36" x2="87.12" y2="73.41"/>
+  <line class="cls-1" x1="133.89" y1="73.41" x2="208.58" y2="132.36"/>
+</svg>
