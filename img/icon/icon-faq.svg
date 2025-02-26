@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lager_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183.68 162.83">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7f6e3;
+        font-family: RailroadGothicATF, 'Railroad Gothic ATF';
+        font-size: 130px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #f7f6e3;
+        stroke-miterlimit: 10;
+        stroke-width: 15px;
+      }
+    </style>
+  </defs>
+  <path class="cls-2" d="M54.88,143.01c11.16,4.61,23.7,7.2,36.96,7.2,46.58,0,84.34-31.95,84.34-71.35S138.42,7.5,91.84,7.5,7.5,39.45,7.5,78.85c0,19.27,9.03,36.76,23.7,49.59l-12.27,23.21,35.95-8.65Z"/>
+  <text class="cls-1" transform="translate(67.14 126.03)"><tspan x="0" y="0">?</tspan></text>
+</svg>

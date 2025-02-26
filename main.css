@@ -130,6 +130,8 @@ footer {
 
 .footer-container {
   display: inline-block;
+  padding: 2rem;
+  font-family: "barlow-condensed", sans-serif;
 }
 
 #overlay {
