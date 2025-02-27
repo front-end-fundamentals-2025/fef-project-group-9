@@ -2,17 +2,37 @@
 font-weight: 900;
 font-style: normal; */
 
-/* font-family: "chorine-large", sans-serif;
-font-weight: 500;
-font-style: normal; */
-
 /* font-family: "barlow-condensed", sans-serif;
 font-weight: 400;
 font-style: normal; */
 
-a {
-  text-decoration: none;
-  color: #f9f4ea;
+/* GRID SET-UP */
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header main"
+    "header footer";
+  margin: 0%;
+}
+
+main {
+  background: #f9f4ea;
+  grid-area: main;
+  width: 100%;
+}
+
+/* HEADER - SIDE-MENU */
+
+header {
+  grid-area: header;
+  background-color: #546745;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 #logo {
@@ -23,6 +43,33 @@ a {
   text-align: center;
   color: #f9f4ea;
 }
+
+a {
+  text-decoration: none;
+  color: #f9f4ea;
+}
+
+ul {
+  font-family: "mudstone-sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4 rem;
+  display: flexbox;
+  list-style: none;
+  text-align: center;
+  padding-left: 0%;
+}
+
+.navlink {
+  color: #f9f4ea;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  color: #e3a994;
+}
+
+/* MAIN */
 
 .page-title {
   display: block;
@@ -65,56 +112,13 @@ a {
   color: #f9f4ea;
 }
 
-ul {
-  font-family: "mudstone-sans", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 4 rem;
-  display: flexbox;
-  list-style: none;
-  text-align: center;
-  padding-left: 0%;
-}
-
-.navlink {
-  color: #f9f4ea;
-  text-decoration: none;
-}
-
-.navlink:hover {
-  color: #e3a994;
-}
-
 p {
   font-family: "barlow-condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-body {
-  display: grid;
-  grid-template-areas:
-    "header main"
-    "header footer";
-  margin: 0%;
-}
-
-main {
-  background: #f9f4ea;
-  grid-area: main;
-  width: 100%;
-}
-
-header {
-  grid-area: header;
-  background-color: #546745;
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-}
+/* FOOTER */
 
 footer {
   grid-area: footer;
@@ -134,10 +138,12 @@ footer {
   font-family: "barlow-condensed", sans-serif;
 }
 
+/* SIDE-MENU POP-UP OVERLAY */
+
 #overlay {
   display: none;
   position: absolute;
-  left: 250px;
+  left: 200px;
   top: 200px;
   background-color: #c47457;
 
@@ -148,4 +154,17 @@ footer {
   font-size: 4 rem;
 
   width: 200px;
+}
+
+.over-link:hover {
+  background-color: #e3a994;
+}
+
+.over-link {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+h3 {
+  margin: 0%;
 }
