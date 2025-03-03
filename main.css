@@ -60,6 +60,11 @@ ul {
   padding-left: 0%;
 }
 
+#cart-icon {
+  padding-top: 5%;
+  width: 20%;
+}
+
 .navlink {
   color: #f9f4ea;
   text-decoration: none;
@@ -84,7 +89,7 @@ ul {
 
 #header-img {
   width: 98%;
-  height: 30%;
+  height: 50vh;
   padding: 1%;
 }
 
@@ -95,7 +100,7 @@ ul {
   text-align: left;
   text-decoration: none;
   color: #4e351e;
-  padding-left: 0%;
+  padding-left: 1%;
   margin: 0%;
   padding-top: 1rem;
 }
@@ -118,12 +123,44 @@ p {
   font-style: normal;
 }
 
+#home-about {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1%;
+}
+
+#about-text {
+  padding-right: 30%;
+  justify-self: left;
+}
+
+#team-img {
+  width: 50%;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+
+.grid-item {
+  width: 100%;  
+  margin: 0%;
+  padding: 0%;
+}
+
+figcaption{
+  color: black;
+}
+
 /* FOOTER */
 
 footer {
   grid-area: footer;
   background-color: #c47457;
-  padding-bottom: 100px;
+  padding-bottom: 0%;
   padding-left: 0%;
 }
 
@@ -137,6 +174,8 @@ footer {
   padding: 2rem;
   font-family: "barlow-condensed", sans-serif;
 }
+
+
 
 /* SIDE-MENU POP-UP OVERLAY */
 

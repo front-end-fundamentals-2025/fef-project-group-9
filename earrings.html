@@ -30,10 +30,10 @@
             <li>Shop by</li>
           </a>
           <div id="overlay">
-            <a href="earrings.html"><h3>Earrings</h3></a>
-            <a href="necklace.html"><h3>Necklaces</h3></a>
-            <a href="rings.html"><h3>Rings</h3></a>
-            <a href="watches.html"><h3>Watches</h3></a>
+            <a href="earrings.html"><h3 class="over-link">Earrings</h3></a>
+            <a href="necklace.html"><h3 class="over-link">Necklaces</h3></a>
+            <a href="rings.html"><h3 class="over-link">Rings</h3></a>
+            <a href="watches.html"><h3 class="over-link">Watches</h3></a>
           </div>
           <a class="navlink" style="font-size: 2rem" href="new-in.html">
             <li>New in</li>
@@ -44,32 +44,86 @@
           <a class="navlink" style="font-size: 2rem" href="#">
             <li>About us</li>
           </a>
+
+          <a href="#">
+            <img id="cart-icon" src="img/cart.png" alt="" />
+          </a>
         </ul>
       </nav>
     </header>
+
     <main>
       <img id="header-img" src="img/placeholder-header.jpg" alt="" />
       <a class="home-category" href="#">
         <h1>Earrings</h1>
       </a>
-      <a href="#">
-        <img class="home-item" src="img/e.bow1.jpg" alt="" />
-      </a>
-      <a href="#">
-        <img class="home-item" src="img/e.cherry1.jpg" alt="" />
-      </a>
-      <a href="#">
-        <img class="home-item" src="img/n.blueheart2.jpg" alt="" />
-      </a>
-      <a href="#">
-        <img class="home-item" src="img/r.spiral1.jpg" alt="" />
-      </a>
-
-      
+      <section class="item-grid">
+        <a href="e.bow.html">
+          <figure class="grid-fig">
+            <img class="grid-item" src="img/e.bow1.jpg" alt="" />
+            <figcaption>e bow 1</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="grid-fig">
+            <img class="grid-item" src="img/e.cherry1.jpg" alt="" />
+            <figcaption>e bow 1</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="grid-fig">
+            <img class="grid-item" src="img/e.crystal1.jpg" alt="" />
+            <figcaption>e bow 1</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="grid-fig">
+            <img class="grid-item" src="img/e.rainbow1.jpg" alt="" />
+            <figcaption>e bow 1</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="grid-fig">
+            <img class="grid-item" src="img/e.red1.jpg" alt="" />
+            <figcaption>e bow 1</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="grid-fig">
+            <img class="grid-item" src="img/e.silverhoop1.jpg" alt="" />
+            <figcaption>e bow 1</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="grid-fig">
+            <img class="grid-item" src="img/e.spiral1.jpg" alt="" />
+            <figcaption>e bow 1</figcaption>
+          </figure>
+        </a>
+      </section>
     </main>
 
     <footer>
-      <p>footer</p>
+      <ul>
+        <div class="footer-container">
+          <p>SPARK™</p>
+        </div>
+        <div class="footer-container">
+          <img class="footer-icon" src="img/icon/icon-mail.svg" alt="" />
+          <p>Contact us</p>
+        </div>
+        <div class="footer-container">
+          <img class="footer-icon" src="img/icon/icon-faq.svg" alt="" />
+          <p>Frequently asked questions</p>
+        </div>
+        <div class="footer-container">
+          <img class="footer-icon" src="img/icon/icon-return.svg" alt="" />
+          <p>Return Policy</p>
+        </div>
+        <div class="footer-container">
+          <p>Socials</p>
+        </div>
+      </ul>
     </footer>
   </body>
 </html>
