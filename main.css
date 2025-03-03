@@ -143,8 +143,8 @@ footer {
 #overlay {
   display: none;
   position: absolute;
-  left: 200px;
-  top: 200px;
+  left: 100%;
+  top: 175px;
   background-color: #c47457;
 
   color: white;
