@@ -146,13 +146,17 @@ p {
 }
 
 .grid-item {
-  width: 100%;  
+  width: 100%;
   margin: 0%;
   padding: 0%;
 }
 
-figcaption{
+figcaption {
   color: black;
+}
+
+figure {
+  margin: 4%;
 }
 
 /* FOOTER */
@@ -174,8 +178,6 @@ footer {
   padding: 2rem;
   font-family: "barlow-condensed", sans-serif;
 }
-
-
 
 /* SIDE-MENU POP-UP OVERLAY */
 
