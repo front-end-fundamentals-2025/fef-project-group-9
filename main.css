@@ -159,6 +159,46 @@ figure {
   margin: 4%;
 }
 
+/* detail page*/
+
+.d-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1%;
+  gap: 1%;
+}
+
+.d-text {
+  font-family: "mudstone-sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  margin-left: 1%;
+}
+
+.d-header {
+  display: inline;
+  font-size: 5svw;
+  color: #4e351e;
+  padding-top: 2%;
+  margin: 0%;
+}
+
+.d-prize {
+  margin-left: 8%;
+  display: inline;
+  font-size: 4svw;
+}
+
+.d-large {
+  width: 100%;
+}
+
+.d-small {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-bottom: 2%;
+}
 /* FOOTER */
 
 footer {
