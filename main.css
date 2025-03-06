@@ -115,6 +115,21 @@ ul {
   width: 15vw;
   text-decoration: none;
   color: #f9f4ea;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 15px;
+  border: #f9f4ea 2px solid;
+}
+
+.home-item:hover {
+  scale: 1.02;
+}
+
+.pink-shadow {
+  box-shadow: 7px 7px #c47457;
+}
+
+.green-shadow {
+  box-shadow: 7px 7px #546745;
 }
 
 p {
