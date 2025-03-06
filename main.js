@@ -13,3 +13,18 @@ overlayElement.addEventListener("mouseover", function (e) {
 overlayElement.addEventListener("mouseout", function (e) {
   overlayElement.style.display = "none";
 });
+
+const cartButton = document.getElementById("d-button");
+const cartBow = document.getElementById("cart-bow");
+const cartSpiral = document.getElementById("cart-spiral");
+let cart = [];
+
+cartButton.addEventListener("click", function (e) {
+  cart.push(cartBow.innerText);
+  localStorage.cart = JSON.stringify(cart);
+});
+
+cartButton.addEventListener("click", function (e) {
+  cart.push(cartSpiral.innerText);
+  localStorage.cart = JSON.stringify(cart);
+});

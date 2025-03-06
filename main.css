@@ -176,9 +176,9 @@ figure {
 }
 
 .d-header {
+  color: #4e351e;
   display: inline;
   font-size: 5svw;
-  color: #4e351e;
   padding-top: 2%;
   margin: 0%;
 }
@@ -198,6 +198,16 @@ figure {
   flex-direction: column;
   width: 25%;
   margin-bottom: 2%;
+}
+
+#d-button {
+  width: 5rem;
+  height: 5rem;
+}
+
+.d-cart-img {
+  width: 4rem;
+  margin: 0%;
 }
 /* FOOTER */
 
