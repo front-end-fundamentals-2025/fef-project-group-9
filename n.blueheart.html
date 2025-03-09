@@ -7,7 +7,7 @@
     <!-- big fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/eoz8hrk.css" />
     <link rel="stylesheet" href="https://use.typekit.net/eoz8hrk.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/pph0ces.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/pph0ces.css">
     <!-- small font -->
     <link rel="stylesheet" href="https://use.typekit.net/eoz8hrk.css" />
     <link rel="stylesheet" href="main.css" />
@@ -31,10 +31,10 @@
             <li>Shop by</li>
           </a>
           <div id="overlay">
-            <a href="earrings.html"><h3>Earrings</h3></a>
-            <a href="necklace.html"><h3>Necklaces</h3></a>
-            <a href="rings.html"><h3>Rings</h3></a>
-            <a href="watches.html"><h3>Watches</h3></a>
+            <a href="earrings.html"><h3 class="over-link">Earrings</h3></a>
+            <a href="necklace.html"><h3 class="over-link">Necklaces</h3></a>
+            <a href="rings.html"><h3 class="over-link">Rings</h3></a>
+            <a href="watches.html"><h3 class="over-link">Watches</h3></a>
           </div>
           <a class="navlink" style="font-size: 2rem" href="new-in.html">
             <li>New in</li>
@@ -45,30 +45,29 @@
           <a class="navlink" style="font-size: 2rem" href="#">
             <li>About us</li>
           </a>
+
+          <a href="#">
+            <img id="cart-icon" src="img/cart.png" alt="" />
+          </a>
         </ul>
       </nav>
     </header>
-    <main>
-      <img id="header-img" src="img/placeholder-header.jpg" alt="" />
-      <a class="home-category" href="#">
-        <h1>Watches</h1>
-      </a>
-      <section class="item-grid">
-        <a href="#">
-          <figure class="grid-fig">
-            <img class="grid-item" src="img/w.pink1.jpg" alt="" />
-            <figcaption>pink watch</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure class="grid-fig">
-            <img class="grid-item" src="img/w.silver1.jpg" alt="" />
-            <figcaption>silver watch</figcaption>
-          </figure>
-        </a>
+    <main id="d-main">
+      <section class="d-grid">
+        <img class="d-large" src="img/n.blueheart2.jpg" alt="" />
+
+        <section class="d-small-cont">
+          <img class="d-small" src="img/n.blueheart1.jpg" alt="" />
+          <img class="d-small" src="img/n.blueheart.jpg" alt="" />
+        </section>
       </section>
-
-
+      <section class="d-text">
+        <h1 class="d-header" id="cart-bow">Blue heart necklace</h1>
+        <button id="d-button">add to cart</button>
+        <!-- <button class="d-button">add to cart</button> -->
+        <p>This is blue heart necklace</p>
+      </section>
+    </main>
     <footer>
       <ul>
         <div class="footer-container">

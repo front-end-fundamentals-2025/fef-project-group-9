@@ -6,6 +6,10 @@ font-style: normal; */
 font-weight: 400;
 font-style: normal; */
 
+/*font-family: "railroad-gothic-atf", sans-serif;
+font-weight: 400;
+font-style: normal;*/
+
 /* GRID SET-UP */
 
 body {
@@ -50,7 +54,7 @@ a {
 }
 
 ul {
-  font-family: "mudstone-sans", sans-serif;
+  font-family: "railroad-gothic-atf", sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 4 rem;
@@ -78,7 +82,7 @@ ul {
 
 .page-title {
   display: block;
-  font-family: "mudstone-sans", sans-serif;
+  font-family: "railroad-gothic-atf", sans-serif;
   font-size: 4svw;
   text-decoration: none;
   color: #4e351e;
@@ -95,7 +99,7 @@ ul {
 
 .home-category {
   display: block;
-  font-family: "mudstone-sans", sans-serif;
+  font-family: "railroad-gothic-atf", sans-serif;
   font-size: 3svw;
   text-align: left;
   text-decoration: none;
@@ -106,9 +110,28 @@ ul {
 }
 
 .home-container {
-  display: flex;
+  display: flexbox;
   justify-content: center;
   gap: 1rem;
+}
+
+.shop-by-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  justify-self: center;
+}
+
+.shop-by-fig {
+  font-family: "railroad-gothic-atf", sans-serif;
+  color: #4e351e;
+}
+
+.shop-by-fig-img {
+  width: 100%;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 15px;
+  border: #f9f4ea 2px solid;
 }
 
 .home-item {
@@ -166,8 +189,15 @@ p {
   padding: 0%;
 }
 
+.grid-fig {
+  font-family: "railroad-gothic-atf", sans-serif;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 15px;
+  border: #f9f4ea 2px solid;
+}
+
 figcaption {
-  color: black;
+  color: #4e351e;
 }
 
 figure {
@@ -184,7 +214,7 @@ figure {
 }
 
 .d-text {
-  font-family: "mudstone-sans", sans-serif;
+  font-family: "railroad-gothic-atf", sans-serif;
   font-weight: 900;
   font-style: normal;
   margin-left: 1%;
@@ -254,7 +284,7 @@ footer {
   background-color: #c47457;
 
   color: white;
-  font-family: "mudstone-sans", sans-serif;
+  font-family: "railroad-gothic-atf", sans-serif;
   font-weight: 900;
   font-style: normal;
   font-size: 4 rem;
