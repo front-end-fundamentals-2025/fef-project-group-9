@@ -1,3 +1,5 @@
+// OVERLAY MENU LOGIC
+
 const overlayElement = document.getElementById("overlay");
 const shopByElement = document.getElementById("shop-by");
 
@@ -14,11 +16,12 @@ overlayElement.addEventListener("mouseout", function (e) {
   overlayElement.style.display = "none";
 });
 
+// ADD TO CART LOGIC
+
 // Option 1:
 const cartButton = document.getElementById("d-button");
 const cartName = document.getElementById("cart-name");
-const cartText = document.getElementById("cart-text");
-const cartImg = document.getElementById("header-img");
+
 let cart = [];
 
 cartButton.addEventListener("click", function (e) {
@@ -55,3 +58,15 @@ for (let i = 0; i < cartButtons.length; i++) {
     localStorage.cart = JSON.stringify(cart);
   });
 } */
+
+// DISPLAY CART LOGIC
+
+const cartItems = document.getElementById("cart-items");
+
+let cartTwo = JSON.parse(localStorage.cart);
+
+if (cartTwo.length === 0) {
+  cartItems.innerHTML = "<p>Your cart is empty.</p>";
+} else {
+  cartItems.innerHTML = "<p>Your cart is full.</p>";
+}
