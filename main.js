@@ -61,3 +61,4 @@ for (let i = 0; i < cartButtons.length; i++) {
     localStorage.cart = JSON.stringify(cart);
   });
 } */
+

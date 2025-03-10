@@ -97,6 +97,21 @@ ul {
   padding: 1%;
 }
 
+p {
+  font-family: "barlow-condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1{
+  font-family: "railroad-gothic-atf", sans-serif;
+  color: #4e351e;
+  font-size: 4svw;
+  padding-left: 2%;
+}
+
+/* HOME PAGE/INDEX PAGE */
+
 .home-category {
   display: block;
   font-family: "railroad-gothic-atf", sans-serif;
@@ -114,6 +129,38 @@ ul {
   justify-content: center;
   gap: 1rem;
 }
+.home-item:hover {
+  scale: 1.02;
+}
+
+.pink-shadow {
+  box-shadow: 7px 7px #c47457;
+}
+
+.green-shadow {
+  box-shadow: 7px 7px #546745;
+}
+
+.home-item {
+  width: 15vw;
+  text-decoration: none;
+  color: #f9f4ea;
+  margin-left: 2%;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 15px;
+  border: #f9f4ea 2px solid;
+}
+
+figcaption {
+  color: #4e351e;
+  margin-top: 3%;
+}
+
+figure {
+  margin: 4%;
+}
+
+/* SHOP BY PAGE */
 
 .shop-by-grid {
   display: grid;
@@ -134,32 +181,24 @@ ul {
   border: #f9f4ea 2px solid;
 }
 
-.home-item {
-  width: 15vw;
-  text-decoration: none;
-  color: #f9f4ea;
-  border-top-right-radius: 40px;
-  border-bottom-left-radius: 15px;
-  border: #f9f4ea 2px solid;
-}
-
-.home-item:hover {
+.shop-by-fig-img:hover {
   scale: 1.02;
 }
 
-.pink-shadow {
-  box-shadow: 7px 7px #c47457;
+/* BEST SELLERS PAGE */
+
+/* NEW IN PAGE and BEST SELLER PAGE*/
+.new-in-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.green-shadow {
-  box-shadow: 7px 7px #546745;
+.new-in-blurb{
+  padding-left: 2%;
+  width: 60%;
 }
 
-p {
-  font-family: "barlow-condensed", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+/* ABOUT US PAGE */
 
 #home-about {
   width: 100%;
@@ -177,6 +216,8 @@ p {
   width: 50%;
 }
 
+/* CATEGORY PAGES */
+
 .item-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -187,6 +228,13 @@ p {
   width: 100%;
   margin: 0%;
   padding: 0%;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 15px;
+  border: #f9f4ea 2px solid;
+}
+
+.grid-item:hover {
+  scale: 1.02;
 }
 
 .grid-fig {
@@ -195,15 +243,6 @@ p {
   border-bottom-left-radius: 15px;
   border: #f9f4ea 2px solid;
 }
-
-figcaption {
-  color: #4e351e;
-}
-
-figure {
-  margin: 4%;
-}
-
 /* detail page*/
 
 .d-grid {
@@ -254,6 +293,7 @@ figure {
   width: 4rem;
   margin: 0%;
 }
+
 /* FOOTER */
 
 footer {
