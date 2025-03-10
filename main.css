@@ -39,6 +39,16 @@ header {
   margin-right: 0%;
 }
 
+.logo-container {
+  margin: 0%;
+  padding: 0%;
+  justify-content: center;
+}
+
+#spark-top {
+  width: 10%;
+}
+
 #logo {
   font-family: "mudstone-sans", sans-serif;
   font-weight: 900;
@@ -103,7 +113,7 @@ p {
   font-style: normal;
 }
 
-h1{
+h1 {
   font-family: "railroad-gothic-atf", sans-serif;
   color: #4e351e;
   font-size: 4svw;
@@ -193,7 +203,7 @@ figure {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.new-in-blurb{
+.new-in-blurb {
   padding-left: 2%;
   width: 60%;
 }
