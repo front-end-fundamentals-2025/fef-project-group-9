@@ -15,10 +15,10 @@ overlayElement.addEventListener("mouseout", function (e) {
 });
 
 // Option 1:
-
 const cartButton = document.getElementById("d-button");
-const cartBow = document.getElementById("cart-bow");
-const cartSpiral = document.getElementById("cart-spiral");
+const cartName = document.getElementById("cart-name");
+const cartText = document.getElementById("cart-text");
+const cartImg = document.getElementById("header-img");
 let cart = [];
 
 cartButton.addEventListener("click", function (e) {
@@ -29,17 +29,11 @@ cartButton.addEventListener("click", function (e) {
     // if not, create a new cart
     cart = [];
   }
-  cart.push(cartBow.innerText);
+  cart.push(cartName.innerText);
   localStorage.cart = JSON.stringify(cart);
 });
 
-//same id for all buttons = on click it goes through both eventListeners (we could make them all in one?)
-cartButton.addEventListener("click", function (e) {
-  cart.push(cartSpiral.innerText);
-  localStorage.cart = JSON.stringify(cart);
-});
-
-// Option 2: USE CLASSES AS ARRAYS - one 'for-loop' = no 100 != ids and no copy paste
+// Option 2: USE CLASSES AS ARRAYS (?)
 // nb - change button 'id' in html to 'class'
 
 /* const cartButtons = document.getElementsByClassName("d-button");
@@ -61,4 +55,3 @@ for (let i = 0; i < cartButtons.length; i++) {
     localStorage.cart = JSON.stringify(cart);
   });
 } */
-
