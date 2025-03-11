@@ -48,30 +48,60 @@ header {
   justify-content: center;
 }
 
-#spark-left {
+#spark-1-1 {
   width: 4%;
   margin-bottom: 20%;
-  opacity: 0;
+  opacity: 1;
 }
 
-#spark-top {
+#spark-1-2 {
   width: 2%;
+  opacity: 1;
+}
+
+#spark-1-3 {
+  width: 3%;
+  opacity: 1;
+  margin-bottom: 10%;
+}
+
+#spark-2-1 {
+  width: 3%;
+  margin-bottom: 10%;
   opacity: 0;
 }
 
-#spark-right {
-  width: 3%;
+#spark-2-2 {
+  width: 4%;
+  margin-top: 5%;
+  opacity: 0;
+}
+
+#spark-2-3 {
+  width: 2%;
+  margin-bottom: 15%;
+  margin-right: 10%;
   opacity: 0;
 }
 
 #logo-container:hover {
-  #spark-left {
+  #spark-1-1 {
+    opacity: 0;
+  }
+  #spark-1-2 {
+    opacity: 0;
+  }
+  #spark-1-3 {
+    opacity: 0;
+  }
+
+  #spark-2-1 {
     opacity: 1;
   }
-  #spark-top {
+  #spark-2-2 {
     opacity: 1;
   }
-  #spark-right {
+  #spark-2-3 {
     opacity: 1;
   }
 }
@@ -196,6 +226,7 @@ h1 {
   display: flexbox;
   justify-content: center;
   gap: 1rem;
+  padding-bottom: 5%;
 }
 .home-item:hover {
   scale: 1.02;
@@ -263,24 +294,6 @@ figure {
   padding-left: 2%;
   width: 60%;
   color: #4e351e;
-}
-
-/* ABOUT US PAGE */
-
-#home-about {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding: 1%;
-}
-
-#about-text {
-  padding-right: 30%;
-  justify-self: left;
-}
-
-#team-img {
-  width: 50%;
 }
 
 /* CATEGORY PAGES */
