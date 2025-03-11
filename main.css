@@ -18,6 +18,8 @@ body {
     "header main"
     "header footer";
   margin: 0%;
+
+  grid-template-columns: 30% 70%;
 }
 
 main {
@@ -39,14 +41,39 @@ header {
   margin-right: 0%;
 }
 
-.logo-container {
-  margin: 0%;
-  padding: 0%;
+#logo-container {
+  display: flex;
+  width: 90%;
+  justify-self: center;
   justify-content: center;
 }
 
+#spark-left {
+  width: 4%;
+  margin-bottom: 20%;
+  opacity: 0;
+}
+
 #spark-top {
-  width: 10%;
+  width: 2%;
+  opacity: 0;
+}
+
+#spark-right {
+  width: 3%;
+  opacity: 0;
+}
+
+#logo-container:hover {
+  #spark-left {
+    opacity: 1;
+  }
+  #spark-top {
+    opacity: 1;
+  }
+  #spark-right {
+    opacity: 1;
+  }
 }
 
 #logo {
@@ -86,6 +113,37 @@ ul {
 
 .navlink:hover {
   color: #e3a994;
+}
+
+/* SIDE-MENU POP-UP OVERLAY */
+
+#overlay {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 175px;
+  background-color: #c47457;
+
+  color: white;
+  font-family: "railroad-gothic-atf", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4 rem;
+
+  width: 200px;
+}
+
+.over-link:hover {
+  background-color: #e3a994;
+}
+
+.over-link {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+h3 {
+  margin: 0%;
 }
 
 /* MAIN */
@@ -195,8 +253,6 @@ figure {
   scale: 1.02;
 }
 
-/* BEST SELLERS PAGE */
-
 /* NEW IN PAGE and BEST SELLER PAGE*/
 .new-in-grid {
   display: grid;
@@ -253,6 +309,7 @@ figure {
   border-bottom-left-radius: 15px;
   border: #f9f4ea 2px solid;
 }
+
 /* detail page*/
 
 .d-grid {
@@ -322,35 +379,4 @@ footer {
   display: inline-block;
   padding: 2rem;
   font-family: "barlow-condensed", sans-serif;
-}
-
-/* SIDE-MENU POP-UP OVERLAY */
-
-#overlay {
-  display: none;
-  position: absolute;
-  left: 100%;
-  top: 175px;
-  background-color: #c47457;
-
-  color: white;
-  font-family: "railroad-gothic-atf", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 4 rem;
-
-  width: 200px;
-}
-
-.over-link:hover {
-  background-color: #e3a994;
-}
-
-.over-link {
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
-}
-
-h3 {
-  margin: 0%;
 }
