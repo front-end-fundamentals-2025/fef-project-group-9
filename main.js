@@ -25,9 +25,7 @@ const cartButton = document.getElementById("d-button");
 if (cartButton !== null) {
   // +++++ THIS IF STATEMENT IS NEW +++++
 
-  const cartBow = document.getElementById("cart-bow");
-
-  const cartSpiral = document.getElementById("cart-spiral");
+  const cartName = document.getElementById("cart-name");
 
   let cart;
 
@@ -44,15 +42,7 @@ if (cartButton !== null) {
       cart = [];
     }
 
-    cart.push(cartBow.innerText);
-
-    localStorage.cart = JSON.stringify(cart);
-  });
-
-  //same id for all buttons = on click it goes through both eventListeners (we could make them all in one?)
-
-  cartButton.addEventListener("click", function (e) {
-    cart.push(cartSpiral.innerText);
+    cart.push(cartName.innerText);
 
     localStorage.cart = JSON.stringify(cart);
   });
@@ -111,13 +101,36 @@ if (localStorage.cart) {
 
   if (cartTwo.length === 0) {
     cartItems.innerHTML = "<p>Your cart is empty.</p>";
-
     console.log("Your cart is empty.");
   } else {
-    cartItems.innerHTML = cartTwo;
+    for (let i = 0; i < cartTwo.length; i++) {
+      let item = cartTwo[i];
+      const liElement = document.createElement("li");
+      liElement.innerHTML = item;
+      liElement.classList.add("new-in-blurb");
+      liElement.classList.add("in-cart");
 
-    console.log(cartTwo);
+      cartItems.appendChild(liElement);
+    }
   }
 } else {
   console.log("Your cart is empty.");
+}
+
+const cartElements = document.getElementsByClassName("in-cart");
+
+for (let i = 0; i < cartElements.length; i++) {
+  const cartElement = cartElements[i];
+  cartElement.addEventListener("click", function (e) {
+    cartElement.remove();
+    //cartThree.splice(i, 1);
+    //localStorage.cart = JSON.stringify(cartThree);
+    const updatedCart = [];
+    const remainingCartElements = document.getElementsByClassName("in-cart");
+
+    for (let j = 0; j < remainingCartElements.length; j++) {
+      updatedCart.push(remainingCartElements[j].innerText);
+    }
+    localStorage.cart = JSON.stringify(updatedCart);
+  });
 }
