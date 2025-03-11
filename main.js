@@ -100,33 +100,47 @@ if (localStorage.cart) {
   let cartTwo = JSON.parse(localStorage.cart);
 
   if (cartTwo.length === 0) {
-    cartItems.innerHTML = "<p>Your cart is empty.</p>";
-    console.log("Your cart is empty.");
+    const emptyElement = document.createElement("li");
+    emptyElement.classList.add("new-in-blurb");
+    emptyElement.innerText = "Your cart is empty.";
+    cartItems.appendChild(emptyElement);
   } else {
     for (let i = 0; i < cartTwo.length; i++) {
       let item = cartTwo[i];
+      const nameElement = document.createElement("p");
+      nameElement.classList.add("cart-name");
+      nameElement.innerText = item;
+      const buttonElement = document.createElement("button");
+      buttonElement.innerText = "remove";
+      buttonElement.classList.add("cart-button");
       const liElement = document.createElement("li");
-      liElement.innerHTML = item;
+      liElement.appendChild(nameElement);
+      liElement.appendChild(buttonElement);
       liElement.classList.add("new-in-blurb");
-      liElement.classList.add("in-cart");
-
+      liElement.classList.add("cart-list");
       cartItems.appendChild(liElement);
     }
   }
 } else {
-  console.log("Your cart is empty.");
+  const emptyElement = document.createElement("li");
+  emptyElement.classList.add("new-in-blurb");
+  emptyElement.innerText = "Your cart is empty.";
+  cartItems.appendChild(emptyElement);
 }
 
-const cartElements = document.getElementsByClassName("in-cart");
+const cartNameElements = document.getElementsByClassName("cart-name");
+const cartButtonElements = document.getElementsByClassName("cart-button");
 
-for (let i = 0; i < cartElements.length; i++) {
-  const cartElement = cartElements[i];
-  cartElement.addEventListener("click", function (e) {
-    cartElement.remove();
+for (let i = 0; i < cartNameElements.length; i++) {
+  const cartNameElement = cartNameElements[i];
+  const cartButtonElement = cartButtonElements[i];
+  cartButtonElement.addEventListener("click", function (e) {
+    cartNameElement.remove();
+    cartButtonElement.remove();
     //cartThree.splice(i, 1);
     //localStorage.cart = JSON.stringify(cartThree);
     const updatedCart = [];
-    const remainingCartElements = document.getElementsByClassName("in-cart");
+    const remainingCartElements = document.getElementsByClassName("cart-name");
 
     for (let j = 0; j < remainingCartElements.length; j++) {
       updatedCart.push(remainingCartElements[j].innerText);

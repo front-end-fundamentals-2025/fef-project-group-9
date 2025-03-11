@@ -90,7 +90,7 @@ a {
   color: #f9f4ea;
 }
 
-ul {
+.navigation {
   font-family: "railroad-gothic-atf", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -262,6 +262,7 @@ figure {
 .new-in-blurb {
   padding-left: 2%;
   width: 60%;
+  color: #4e351e;
 }
 
 /* ABOUT US PAGE */
@@ -379,4 +380,41 @@ footer {
   display: inline-block;
   padding: 2rem;
   font-family: "barlow-condensed", sans-serif;
+}
+
+.footer-class {
+  display: flexbox;
+  justify-content: center;
+}
+
+/* CART PAGE */
+
+#cart-items {
+  font-family: "barlow-condensed", sans-serif;
+  font-weight: 400;
+  font-size: 2svw;
+  font-style: normal;
+  list-style: none;
+  padding: 0%;
+}
+
+.cart-list {
+  display: flex;
+  align-items: center;
+}
+
+.cart-button {
+  scale: 1.3;
+  margin: 10%;
+  font-family: "barlow-condensed", sans-serif;
+  color: #814935;
+  background-color: #f9f4ea;
+  border: none;
+  border-radius: 10%;
+}
+
+.cart-background {
+  background-color: #eec6b7;
+  width: 90%;
+  margin-left: 2%;
 }
