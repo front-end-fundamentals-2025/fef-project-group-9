@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lager_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230.58 230.58">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #f7f6e3;
+        stroke-miterlimit: 10;
+        stroke-width: 19px;
+      }
+
+      .cls-2 {
+        fill: #f7f6e3;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="9.5" y="9.5" width="211.58" height="211.58" rx="36.32" ry="36.32"/>
+  <circle class="cls-1" cx="115.29" cy="115" r="43.07"/>
+  <circle class="cls-2" cx="181.97" cy="60.67" r="10.97"/>
+</svg>
