@@ -16,42 +16,48 @@
   </head>
   <body>
     <header>
-      <a href="index.html">
-        <h1 id="logo">SPARK</h1>
-      </a>
-
-      <nav>
-        <ul class="navigation">
-          <a
-            id="shop-by"
-            class="navlink"
-            style="font-size: 2rem"
-            href="shop-by.html"
-          >
-            <li>Shop by</li>
-          </a>
-          <div id="overlay">
-            <a href="earrings.html"><h3 class="over-link">Earrings</h3></a>
-            <a href="necklace.html"><h3 class="over-link">Necklaces</h3></a>
-            <a href="rings.html"><h3 class="over-link">Rings</h3></a>
-            <a href="watches.html"><h3 class="over-link">Watches</h3></a>
-          </div>
-          <a class="navlink" style="font-size: 2rem" href="new-in.html">
-            <li>New in</li>
-          </a>
-          <a class="navlink" style="font-size: 2rem" href="best-seller.html">
-            <li>Best sellers</li>
-          </a>
-          <a class="navlink" style="font-size: 2rem" href="#">
-            <li>About us</li>
-          </a>
-
-          <a href="cart.html">
-            <img id="cart-icon" src="img/icon/cart-cream.svg" alt="" />
-          </a>
-        </ul>
-      </nav>
-    </header>
+      <section id="header-container">
+           <div id="logo-container">      
+             <a href="index.html"></a>
+             <img id="spark-1-1" src="img/icon/twinkel.svg" alt="" />
+             <img id="spark-1-2" src="img/icon/twinkel.svg" alt="" />
+             <img id="spark-2-1" src="img/icon/twinkel.svg" alt="" />
+               <a href="index.html"><h1 id="logo">SPARK</h1></a>
+             <img id="spark-1-3" src="img/icon/twinkel.svg" alt="" />
+             <img id="spark-2-2" src="img/icon/twinkel.svg" alt="" />
+             <img id="spark-2-3" src="img/icon/twinkel.svg" alt="" />
+           </a>
+         </div>
+         
+           <nav>
+             <ul class="navigation">
+               <a
+                 id="shop-by"
+                 class="navlink"
+                 href="shop-by.html"
+               >
+                 <li class="navtext" >Shop by</li>
+               </a>
+               <div id="overlay">
+                 <a href="earrings.html"><h3 class="over-link">Earrings</h3></a>
+                 <a href="necklace.html"><h3 class="over-link">Necklaces</h3></a>
+                 <a href="rings.html"><h3 class="over-link">Rings</h3></a>
+                 <a href="watches.html"><h3 class="over-link">Watches</h3></a>
+               </div>
+               <a class="navlink"  href="new-in.html">
+                 <li class="navtext" >New in</li>
+               </a>
+               <a class="navlink"  href="best-seller.html">
+                 <li class="navtext" >Best sellers</li>
+               </a>
+     
+               <a href="cart.html">
+                 <img id="cart-icon" src="img/icon/cart-cream.svg" alt="" />
+               </a>
+             </ul>
+           </nav>
+         </section>
+         </header>
     <main id="d-main">
       <section class="d-grid">
         <img class="d-large" src="img/n.miniflower1.jpg" alt="" />
@@ -62,14 +68,18 @@
       </section>
       <section class="d-text">
         <h1 class="d-header" id="cart-name">Glass flower</h1>
-        <button id="d-button">add to cart</button>
+        <button id="d-button">
+          <img src="img/icon/cart-brown.svg" alt="shopping-cart" />
+        </button>
         <!-- <button class="d-button">add to cart</button> -->
-        <p>This is glass flower necklace</p>
+        <p class="new-in-blurb d-price">540,00 kr.</p>
+        <p class="new-in-blurb">This is glass flower necklace</p>
       </section>
     </main>
     <footer>
-      <ul>
+      <ul class="footer-class">
         <div class="footer-container">
+          <img class="footer-icon" src="img/icon/icon-spark-remastered.svg" alt="">
           <p>SPARK™</p>
         </div>
         <div class="footer-container">
@@ -85,6 +95,7 @@
           <p>Return Policy</p>
         </div>
         <div class="footer-container">
+          <img class="footer-icon" src="img/icon/icon-socials-remastered.svg" alt="">
           <p>Socials</p>
         </div>
       </ul>
