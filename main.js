@@ -135,15 +135,20 @@ for (let i = 0; i < cartNameElements.length; i++) {
   const cartNameElement = cartNameElements[i];
   const cartButtonElement = cartButtonElements[i];
   cartButtonElement.addEventListener("click", function (e) {
-    cartNameElement.remove();
-    cartButtonElement.remove();
-    //cartThree.splice(i, 1);
-    //localStorage.cart = JSON.stringify(cartThree);
+    cartNameElement.parentElement.remove();
+
     const updatedCart = [];
+
     const remainingCartElements = document.getElementsByClassName("cart-name");
 
     for (let j = 0; j < remainingCartElements.length; j++) {
       updatedCart.push(remainingCartElements[j].innerText);
+    }
+    if (updatedCart.length === 0) {
+      const emptyElement = document.createElement("li");
+      emptyElement.classList.add("new-in-blurb");
+      emptyElement.innerText = "Your cart is empty.";
+      cartItems.appendChild(emptyElement);
     }
     localStorage.cart = JSON.stringify(updatedCart);
   });

@@ -152,6 +152,8 @@ a {
   position: absolute;
   left: 100%;
   top: 175px;
+  z-index: 20; /* on top of everything */
+
   background-color: #c47457;
 
   color: white;
@@ -415,6 +417,7 @@ footer {
 .cart-list {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #4e351e;
 }
 
 .cart-button {
@@ -431,4 +434,8 @@ footer {
   background-color: #eec6b7;
   width: 90%;
   margin-left: 2%;
+}
+
+#cart-container {
+  display: flex;
 }
