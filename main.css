@@ -30,6 +30,10 @@ footer {
   margin: 0%;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 /* HEADER - SIDE-MENU */
 
 #header-container {
@@ -135,9 +139,26 @@ a {
   width: 100%;
 }
 
+#cart-link {
+  position: relative;
+}
+
 #cart-icon {
   width: 50%;
   padding-bottom: 2%;
+}
+
+#cart-count {
+  position: absolute;
+  font-family: "barlow-condensed", sans-serif;
+  top: -10%;
+  right: 20%;
+  background-color: #c47457;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.7rem;
+  align-content: center;
 }
 
 nav {
@@ -501,18 +522,37 @@ figure {
   background-color: #f9f4ea;
   border: none;
   border-radius: 10%;
-  margin-left: 50%;
+  margin-left: 5%;
 }
 
 .cart-background {
   font-family: "barlow-condensed", sans-serif;
   background-color: #eec6b7;
   width: 90%;
-  margin-left: 2%;
+  margin-left: 1%;
 }
 
 #cart-container {
   display: flex;
+}
+
+.cart-img {
+  width: 15%;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 7px;
+  border: #f9f4ea 2px solid;
+  box-shadow: 4px 4px #f9f4ea;
+}
+
+.cart-text {
+  width: 100%;
+  margin-left: 5%;
+  font-family: "railroad-gothic-atf", sans-serif;
+}
+.cart-price {
+  width: 100%;
+  margin-left: 5%;
+  font-style: italic;
 }
 
 .check-out {
@@ -529,18 +569,24 @@ figure {
 }
 
 input {
+  font-size: 1rem;
   background-color: #f9f4ea;
+  width: 80%;
   border: none;
-  border-bottom: 1px solid #4e351e;
+  border-bottom: 0.5px solid #4e351e;
 }
 
 #submit-button {
-  color: #814935;
-  background-color: #e3a994;
+  width: 94%;
+  padding: 5%;
+  margin: 3%;
+
+  color: #f9f4ea;
+  background-color: #546745;
   border: none;
-  border-radius: 10%;
-  margin-left: 35%;
-  margin-bottom: 10%;
+}
+#submit-button {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 870px) {
@@ -681,6 +727,12 @@ input {
   #cart-icon {
     padding-top: 5%;
     width: 20%;
+  }
+
+  #cart-count {
+    position: absolute;
+    top: 15%;
+    right: 40%;
   }
 
   .navlink {
@@ -1034,7 +1086,6 @@ input {
     background-color: #f9f4ea;
     border: none;
     border-radius: 10%;
-    margin-left: 50%;
   }
 
   .cart-background {
