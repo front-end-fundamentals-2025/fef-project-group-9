@@ -717,6 +717,7 @@ input {
   #header-img {
     height: 30%;
     flex-shrink: none;
+    
   }
 
   .home-item {
