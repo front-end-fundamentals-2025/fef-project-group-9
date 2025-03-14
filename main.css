@@ -473,14 +473,14 @@ figure {
 /* FOOTER */
 
 .footer-icon {
-  width: 1rem;
+  width: 3%;
   display: flexbox;
   justify-self: center;
 }
 
 .footer-container {
   display: inline-block;
-  padding: 2rem;
+  padding: 1%;
   font-family: "barlow-condensed", sans-serif;
   justify-items: center;
 }
@@ -620,6 +620,8 @@ input {
     padding-left: 0%;
   }
 
+
+
   /* HEADER - SIDE-MENU */
 
   #spark-1-1 {
@@ -719,6 +721,32 @@ input {
 
   .home-item {
     width: 15vw;
+  }
+
+  .footer-icon {
+    width: 1rem;
+    display: flexbox;
+    justify-self: center;
+  }
+  
+  .footer-container {
+    display: inline-block;
+
+    padding: 1rem;
+    font-family: "barlow-condensed", sans-serif;
+    justify-items: center;
+    width: 15%;
+  }
+  
+  .footer-icon {
+    width: 1rem;
+    display: flexbox;
+  }
+  
+  .footer-class {
+    display: flexbox;
+    justify-content: center;
+    margin: 0%;
   }
 
   /* detail page*/
